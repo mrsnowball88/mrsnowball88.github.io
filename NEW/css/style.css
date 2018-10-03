@@ -1,0 +1,107 @@
+*, *:before, *:after	{
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Maven Pro";
+}
+
+.main {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	 height: 100vh;
+	 min-height: 600px;
+	 background: url(../img/main.png) no-repeat center / cover;
+	 position: relative;
+}
+.main_overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	z-index: 0;
+	background-image: linear-gradient(-60deg, #88d3ce 0%, #6e45e2 100%);
+}
+
+.header {
+	position: relative;
+	z-index: 2;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	height: 10vh;
+	align-items: center;
+}
+
+.menu {
+	width: 70%;
+}
+
+.menu ul {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+.menu_link {
+	text-decoration: none;
+	color: #fff;
+}
+
+.get_started {
+margin-left: 50px;	
+width: 150px;
+height: 50px;
+border-radius: 25px;
+border: 1px solid #ffffff;
+padding: 20px 30px;
+text-transform: uppercase;
+}
+
+.main_text {
+	position: relative;
+	z-index: 2;
+	text-align: center;
+}
+.main_text h1 {
+	font-size: 86px;
+	font-weight: 500;
+	line-height: 72px;
+	letter-spacing: -2.42px;
+}
+.main_text p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+}
+
+.main_text span {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 700;
+}
+.main_text span::after {
+content: "";
+width: 20px;
+height: 1px;
+background-color: #fff;
+display: inline-block;
+vertical-align: middle;
+margin-left: 15px;
+}
+
+.main_text span::before {
+content: "";
+width: 20px;
+height: 1px;
+background-color: #fff;
+display: inline-block;
+vertical-align: middle;
+margin-right: 15px;
+}
